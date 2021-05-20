@@ -1,0 +1,300 @@
+
+
+main{
+    border: 1px solid green;
+    grid-template-columns: repeat(2, 1fr);
+}
+section{
+    border:1px solid black;
+}
+
+// header 
+.header {
+    height: 100vh;
+    background: url(../media/home-img.jpg)no-repeat center center;
+    background-size: cover;
+
+    h1 {
+        color: #404040;
+        text-shadow: 1px 1px white;
+        font-size: 600;
+        margin: {
+            top: 2rem;
+            left: 10rem;
+        }
+    }
+
+}
+
+// hero 
+.hero {
+    background: #F5E3D6;
+
+    li {
+
+        a{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: $primary-font-size;
+            color: #857a73;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+
+        .active {
+            color: $secondary-color;
+        }
+    }
+
+    h6 {
+        color: $font-color;
+        font-size: .77rem;
+        letter-spacing: 2px;
+        margin:  {
+            top: 10rem;
+            bottom: 1rem;
+        };
+    }
+
+    h2 {
+        small {
+            color: black;
+            font-weight: 400;
+        }
+    }
+    
+    p {
+        color: #CBBFB8;
+        margin: {
+            top: 1.5rem;
+            bottom: 4rem;
+        };
+    
+    }
+
+    .btn-primary {
+        @extend .btn;
+        color: black;
+        font-size: $primary-font-size;
+        border: 3px solid black;
+        font-weight: 600;
+    }
+}
+
+.about {
+    background: white;
+    h2 {
+        color: black;
+    }
+
+    h6 {
+        color: #ffd699;
+        margin: {
+            top: 1rem;
+            bottom:  2.5rem;
+        };
+    }
+    
+    p {
+        color: #BABABA;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+// skills 
+.skills {
+    background: $secondary-color;
+    .skills-img {
+        background: url(../media/about-img.jpg);
+        background-position: top;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    h6 {
+        color: white;
+        margin: 1rem 0;
+    }
+    .progrss-text {
+        margin-bottom: .5rem;
+    }
+    progress {
+        appearance: none;
+        width: 100%;
+    }
+    progress::-webkit-progress-bar {
+        height: 2px;
+        background: white;
+    }
+    progress::-webkit-progress-value {
+        background: black;
+    }
+}
+
+// features 
+
+.features {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(4, 1fr);
+
+    article {
+        text-align: center;
+        background: yellowgreen;
+        padding: 3rem 2rem 4rem 2rem;
+
+        i {
+            font-size: 2.5rem;
+            color: #FFF1ED;
+        }
+
+        h3 {
+            color: #FFF1ED;
+            margin: {
+                top: 2rem;
+                bottom: 1.5rem;
+            };
+        }
+        p {
+            color: #FFF1ED;
+            line-height: 2;
+        }
+    }
+
+    .article-1 {
+        background: $secondary-color;
+    }
+
+    .article-2 {
+        background: $primary-color;
+    }
+
+    .article-3 {
+        background: black;
+    }
+
+    .article-4 {
+        background: white;
+
+        i {
+            color: black;
+        }
+
+        h3 {
+            color: black;
+        }
+        p {
+            color: black;
+        }
+    }
+}
+
+// banner 
+.experience-banner, .education-banner  {
+    img {
+        height: 24rem;
+        object-fit: cover;
+    }
+}
+
+// .experience and .education 
+.experience, .education {
+    padding: 0rem 15rem 0rem 3rem;
+    background: $primary-color;
+    color: white;
+
+    h2 {
+        color: white;
+        margin-top: 2.5rem;
+    }
+
+    .each-task {
+
+        span {
+            font-size: 2rem;
+        } 
+    
+        h3 {
+            color: rgb(231, 230, 230);
+            margin: {
+                right: .5rem;
+                left: 1.5rem
+            };
+        } 
+    
+        datetime {
+            color: #713234;
+        }
+    
+    }
+
+    p {
+        color: rgb(231, 230, 230);
+        margin-bottom: 1.5rem;
+        margin-left: 4rem;
+    } 
+
+    .text {
+        margin: .8rem 0 2.5rem 0;
+    }
+}
+
+.education {
+    background: $secondary-color;
+}
+.education-banner  {
+    img {
+        height: 28rem;
+    }
+}
+
+// form 
+.form {
+    background: $primary-color;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color:#FECCBD;
+        margin:.8rem 0 2.8rem 0;
+    }
+
+    input,textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $secondary-color;
+        padding: .5rem 0;
+        background: $primary-color;
+        margin-bottom: 2rem;
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.1rem;
+        color:#FECCBD;
+        font-weight: 100;
+
+
+        &::placeholder {
+            font-size: 1.1rem;
+            color:#FECCBD;
+            font-weight: 100;
+        }
+        
+       
+    }
+
+    .btn-secondary {
+        @extend .btn;
+        background-color: white;
+        padding: 0.6rem 8rem;
+        color: #959494;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+}
+    
+
+
