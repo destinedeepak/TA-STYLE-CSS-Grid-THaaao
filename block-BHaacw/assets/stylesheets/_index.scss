@@ -1,0 +1,142 @@
+// header 
+.header {
+    h1 {
+        color: white;
+    }
+}
+
+// section 
+.container {
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1.3rem;
+
+    .title {
+        border-top: 3px solid $primary;
+        border-radius: 3px;
+        background: white;
+        padding: .5rem;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #394A4E;
+        }
+
+        p {
+            color: #394A4E;
+        }
+
+        a{
+            display: inline-block;
+            color: #FC2E1A;
+            margin-top: .7rem;
+        }
+    }
+
+    .title1 {
+        grid-column: 1/-1;
+        padding: 0 0 .5rem 0;
+        
+        li {
+
+            a {
+                font-size: 1.3rem;
+                color: $primary;
+            }
+        }
+    }
+
+    .title3 {
+        grid-row: span 3;
+
+        img {
+            border-radius: 50%;
+            margin: 2.3rem 0;
+        }
+    }
+    .title4  {
+        padding:0;
+
+        h2,p {
+            padding:0 .5rem;
+        }
+        
+        a {
+            background-color: #FC2E1A;
+            display: block;
+            color: white;
+            padding: .5rem;
+        }
+    } 
+
+    .title5 {
+        grid-row: span 2;
+
+        .img-container {
+            width: 7rem;
+            margin: 0 auto;
+        }
+    }
+
+    .title6 {
+        padding: 0;
+        p,a {
+            padding: 0 .5rem;
+        }
+        h2 {
+            background: $primary;
+            padding: 0 0.5rem;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    html{
+       font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    
+    html{
+        font-size:14px;
+    }
+
+    .container{
+        max-width: 720px;
+        grid-template-columns:repeat(2, 1fr);
+        .title3 {
+            order: 1;
+        }
+    }
+     
+}
+
+
+
+@media screen and (max-width:576px){
+    .container{
+        max-width: 540px;
+        padding: 0 1rem;
+
+        grid-template-columns:repeat(1, 1fr);
+        .title3 {
+            order: 1;
+        }
+    }
+
+    html{
+        font-size: 10px;
+     }
+}
