@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/d95544a3bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Stimulus - Assignment Level II</title>
+</head>
+<body>
+<main class="grid"> 
+    <header class="header">
+        <h1>Stimulus</h1>
+    </header>
+
+    <section class="hero padding">
+        <nav>
+            <ul class="flex space-around">
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">experiences</a></li>
+                <li><a href="#">testimonial</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <h6 class="uppercase">welcome to my website</h6>
+        <h2>Hello, I am <small>Stimulus</small> currently based in New York City</h2>
+        <p>Donec ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis ratione corporis itaque assumenda, nesciunt consequatur unde voluptatibus tenetur error lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn-primary uppercase">get started</a>
+    </section>
+
+    <section class="about padding">
+        <h2>Donec Auctor</h2>
+        <h6>Spsum dolor, sit amet consectetur adipisicing</h6>
+        <p>Dolor sit amet consectetur adipisicing elit. Molestias excepturi perferendis omnis. Exercitationem, ullam Consequatur repudiandae quae modi aperiam fuga.</p>
+        <p>Sit amet consectetur adipisicing elit. Corporis, nostrum quod. Quae atque vero labore rerum eveniet, illo quos molestiae dolores explicabo.</p>
+    </section>
+
+    <section class="skills flex">
+        <div class="flex-50 skills-img">
+        </div>
+        <article class="flex-50 padding">
+            <h2>My Skills</h2>
+            <h6>Photoshop. HTML CSS JS. Web Design</h6>
+            <div class="progrss-text flex">
+                <span class="each-skill">Frontend Design</span>
+                <span class="percentage">90%</span>
+            </div>
+            <progress id="file" value="90" max="100"> 90% </progress>
+
+            <div class="progrss-text flex">
+                <span class="each-skill">Frontend Design</span>
+                <span class="percentage">70%</span>
+            </div>
+            <progress id="file" value="70" max="100"> 70% </progress>
+
+            <div class="progrss-text flex">
+                <span class="each-skill">Frontend Design</span>
+                <span class="percentage">80%</span>
+            </div>
+            <progress id="file" value="32" max="100"> 80% </progress>
+        </article>
+    </section>
+
+    <section class="features grid">
+        <article class = "article-1">
+            <div><i class="fas fa-desktop"></i></div>
+            <h3>Interface Design</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+        <article class = "article-2 ">
+            <div><i class="fab fa-telegram-plane"></i></div>
+            <h3>Media Strategy</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+        <article class = "article-3">
+            <div><i class="fas fa-th"></i></div>
+            <h3>Mobile App</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+        <article class = "article-4">
+            <div><i class="fab fa-html5"></i></div>
+            <h3>Coding</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+    </section>
+
+    <section class="experience-banner font-0">
+        <img class="full-width" src="./assets/media/experience-img.jpg" alt="">
+    </section>
+
+    <section class="experience">
+        <h2>My Experiences</h2>
+        <p class="text">Previous companies and my task</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Graphic Designer</h3>
+            <datetime>2014 Jul-2015 Sep</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Web Designer</h3>
+            <datetime>2015 Jul-2017 Jan</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut</p>
+    </section>
+            
+    <section class="education">
+        <h2>My Education</h2>
+        <p class="text">Previous companies and my task</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Master in Design</h3>
+            <datetime>2014 Jul-2015 Sep</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut lorem ipsum dolor sit</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Bachelor of Arts</h3>
+            <datetime>2015 Jul-2017 Jan</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut lorem ipsum dolor</p>
+    </section>
+
+    <section class="education-banner font-0">
+        <img class="full-width" src="./assets/media/education-img.jpg" alt="">
+    </section>
+
+    <section class="form padding">
+        <h2>Say hello..</h2>
+        <p>Ingnissimos eligendi fuga ipsam expedita quisquam at esse deleniti</p>
+
+        <form action="#">
+            <fieldset>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea rows="6">Write Your message...</textarea>
+                <a href="#" class="btn-secondary">Send</a>
+            </fieldset>
+        </form>
+    </section>
+
+    <section>10</section>
+
+    <section>11</section>
+
+    <section>12</section>
+
+    <section>13</section>
+    
+</main>
+</body>
+</html>
