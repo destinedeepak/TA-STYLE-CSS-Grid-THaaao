@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/stylesheets/style.css">
     <script src="https://kit.fontawesome.com/d95544a3bc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <title>Stimulus - Assignment Level II</title>
 </head>
 <body>
@@ -39,8 +39,9 @@
         <p>Sit amet consectetur adipisicing elit. Corporis, nostrum quod. Quae atque vero labore rerum eveniet, illo quos molestiae dolores explicabo.</p>
     </section>
 
-    <section class="skills flex">
-        <div class="flex-50 skills-img">
+    <section class="skills flex med-column">
+        <div class="flex-50 skills-img ">
+            <img src="./assets/media/about-img.jpg" alt="">
         </div>
         <article class="flex-50 padding">
             <h2>My Skills</h2>
@@ -148,14 +149,33 @@
         </form>
     </section>
 
-    <section>10</section>
+    <section class="contact">
+        <img src="./assets/media/contact-img.jpg" alt="contact-pic">
+        <address class="contact-address padding">
+            <h3>visit my office</h3>
+            <p>456 New Street 22000, New York City, USA</p>
+            <h3>Contact</h3>
+            <a href="hello@company.co"><i class="fas fa-phone"></i>hello@company.co</a><br>
+            <a class="tel" href="tel:01-0475-7689"><i class="far fa-envelope"></i>01-0475-7689</a><br>
+            <a class="url" href="#"><i class="fas fa-globe-europe"></i>company.co</a>
+        </address>
+    </section>
 
-    <section>11</section>
-
-    <section>12</section>
-
-    <section>13</section>
-    
+    <section class="map">
+        <div class="map-container flex-38">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.9195155713437!2d76.35140991512226!3d32.20639932016735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1621354659440!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+    </section>
 </main>
+<footer class="footer">
+   <p>Copyright &copy; 2016 Your Company | Design: <small>templatemo</small></p>
+   <div>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+    <a href="#"><i class="fab fa-dribbble"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></span>
+   </div>
+</footer>
 </body>
 </html>
