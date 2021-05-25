@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/d95544a3bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Stimulus - Assignment Level II</title>
+</head>
+<body>
+<main class="grid"> 
+    <header class="header">
+        <h1>Stimulus</h1>
+    </header>
+
+    <section class="hero padding">
+        <nav>
+            <ul class="flex space-around">
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">experiences</a></li>
+                <li><a href="#">testimonial</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <h6 class="uppercase">welcome to my website</h6>
+        <h2>Hello, I am <small>Stimulus</small> currently based in New York City</h2>
+        <p>Donec ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis ratione corporis itaque assumenda, nesciunt consequatur unde voluptatibus tenetur error lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn-primary uppercase">get started</a>
+    </section>
+
+    <section class="about padding">
+        <h2>Donec Auctor</h2>
+        <h6>Spsum dolor, sit amet consectetur adipisicing</h6>
+        <p>Dolor sit amet consectetur adipisicing elit. Molestias excepturi perferendis omnis. Exercitationem, ullam Consequatur repudiandae quae modi aperiam fuga.</p>
+        <p>Sit amet consectetur adipisicing elit. Corporis, nostrum quod. Quae atque vero labore rerum eveniet, illo quos molestiae dolores explicabo.</p>
+    </section>
+
+    <section class="skills flex med-column">
+        <div class="flex-50 skills-img ">
+            <img src="./assets/media/about-img.jpg" alt="">
+        </div>
+        <article class="flex-50 padding">
+            <h2>My Skills</h2>
+            <h6>Photoshop. HTML CSS JS. Web Design</h6>
+            <div class="progrss-text flex">
+                <span class="each-skill">Frontend Design</span>
+                <span class="percentage">90%</span>
+            </div>
+            <progress id="file" value="90" max="100"> 90% </progress>
+
+            <div class="progrss-text flex">
+                <span class="each-skill">Frontend Design</span>
+                <span class="percentage">70%</span>
+            </div>
+            <progress id="file" value="70" max="100"> 70% </progress>
+
+            <div class="progrss-text flex">
+                <span class="each-skill">Frontend Design</span>
+                <span class="percentage">80%</span>
+            </div>
+            <progress id="file" value="32" max="100"> 80% </progress>
+        </article>
+    </section>
+
+    <section class="features grid">
+        <article class = "article-1">
+            <div><i class="fas fa-desktop"></i></div>
+            <h3>Interface Design</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+        <article class = "article-2 ">
+            <div><i class="fab fa-telegram-plane"></i></div>
+            <h3>Media Strategy</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+        <article class = "article-3">
+            <div><i class="fas fa-th"></i></div>
+            <h3>Mobile App</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+        <article class = "article-4">
+            <div><i class="fab fa-html5"></i></div>
+            <h3>Coding</h3>
+            <p>Oluptate modi fugit possimus voluptates neque quia quam odit, similique hic saepe quas architecto quod adipisci</p>
+        </article>
+    </section>
+
+    <section class="experience-banner font-0">
+        <img class="full-width" src="./assets/media/experience-img.jpg" alt="">
+    </section>
+
+    <section class="experience">
+        <h2>My Experiences</h2>
+        <p class="text">Previous companies and my task</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Graphic Designer</h3>
+            <datetime>2014 Jul-2015 Sep</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Web Designer</h3>
+            <datetime>2015 Jul-2017 Jan</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut</p>
+    </section>
+            
+    <section class="education">
+        <h2>My Education</h2>
+        <p class="text">Previous companies and my task</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Master in Design</h3>
+            <datetime>2014 Jul-2015 Sep</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut lorem ipsum dolor sit</p>
+
+        <div class="each-task flex start align-center">
+            <span><i class="fas fa-tv"></i></span>
+            <h3>Bachelor of Arts</h3>
+            <datetime>2015 Jul-2017 Jan</datetime>
+        </div>
+        <p>Quod esse, reprehenderit beatae eos ut lorem ipsum dolor</p>
+    </section>
+
+    <section class="education-banner font-0">
+        <img class="full-width" src="./assets/media/education-img.jpg" alt="">
+    </section>
+
+    <section class="form padding">
+        <h2>Say hello..</h2>
+        <p>Ingnissimos eligendi fuga ipsam expedita quisquam at esse deleniti</p>
+
+        <form action="#">
+            <fieldset>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea rows="6">Write Your message...</textarea>
+                <a href="#" class="btn-secondary">Send</a>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="contact">
+        <img src="./assets/media/contact-img.jpg" alt="contact-pic">
+        <address class="contact-address padding">
+            <h3>visit my office</h3>
+            <p>456 New Street 22000, New York City, USA</p>
+            <h3>Contact</h3>
+            <a href="hello@company.co"><i class="fas fa-phone"></i>hello@company.co</a><br>
+            <a class="tel" href="tel:01-0475-7689"><i class="far fa-envelope"></i>01-0475-7689</a><br>
+            <a class="url" href="#"><i class="fas fa-globe-europe"></i>company.co</a>
+        </address>
+    </section>
+
+    <section class="map">
+        <div class="map-container flex-38">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.9195155713437!2d76.35140991512226!3d32.20639932016735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1621354659440!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+    </section>
+</main>
+<footer class="footer">
+   <p>Copyright &copy; 2016 Your Company | Design: <small>templatemo</small></p>
+   <div>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+    <a href="#"><i class="fab fa-dribbble"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></span>
+   </div>
+</footer>
+</body>
+</html>
